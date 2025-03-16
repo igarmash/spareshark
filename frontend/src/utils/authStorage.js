@@ -1,9 +1,7 @@
-// utils/authStorage.js - Updated to work with JWT from backend
 import { loginUser as apiLoginUser, registerUser as apiRegisterUser } from './api';
 
-const AUTH_KEY = 'finance-tracker-auth';
+const AUTH_KEY = 'spareshark-auth';
 
-// Save user data with token to local storage
 export const saveUser = (userData) => {
   localStorage.setItem(AUTH_KEY, JSON.stringify(userData));
 };
@@ -18,6 +16,7 @@ export const getUser = () => {
 export const removeUser = () => {
   localStorage.removeItem(AUTH_KEY);
 };
+
 
 // Login user using the API
 export const loginUser = async (credentials) => {

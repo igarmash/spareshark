@@ -8,7 +8,7 @@
 		<version>3.2.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.sparesharj</groupId>
+	<groupId>com.spareshark</groupId>
 	<artifactId>spare-shark-backend</artifactId>
 	<version>0.1.0</version>
 	<name>Spare Shark Backend</name>
