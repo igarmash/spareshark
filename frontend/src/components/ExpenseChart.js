@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { getTotalBalance, getMonthlyBalance } from '../utils/api';
 
-function Dashboard({ transactions }) {
+function ExpenseChart({ transactions }) {
   const [balances, setBalances] = useState({
     total: 0,
     monthly: 0
@@ -132,4 +132,4 @@ function Dashboard({ transactions }) {
   );
 }
 
-export default Dashboard;
+export default ExpenseChart;
