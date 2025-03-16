@@ -6,7 +6,7 @@ function TransactionList({ transactions, onDeleteTransaction }) {
   const sortedTransactions = [...transactions].sort((a, b) => 
     new Date(b.date) - new Date(a.date)
   );
-  
+
   return (
     <div className="transaction-list">
       <h2>Transaktionen</h2>
@@ -18,7 +18,7 @@ function TransactionList({ transactions, onDeleteTransaction }) {
             <li key={transaction.id} className={transaction.amount < 0 ? 'expense' : 'income'}>
               <div className="transaction-info">
                 <span className="transaction-date">
-                  {new Date(transaction.date).toLocaleDateString('de-DE')}
+                  {new Date(transaction.date).toLocaleDateString('de-CH')}
                 </span>
                 <span className="transaction-category">{transaction.category}</span>
                 <span className="transaction-description">{transaction.description}</span>
