@@ -4,7 +4,7 @@ const API_BASE_URL = '/api';
 
 // Function to get authentication token from local storage
 const getAuthToken = () => {
-  const user = JSON.parse(localStorage.getItem('finance-tracker-auth'));
+  const user = JSON.parse(localStorage.getItem('spareshark-auth'));
   return user ? user.token : null;
 };
 
